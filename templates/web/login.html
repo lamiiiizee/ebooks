@@ -1,220 +1,21 @@
+{% extends 'web/base.html' %} {% load static %} {% block content %}
+
+
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Login - Booksly - Book Store HTML5 Template</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Booksly - Book Store HTML5 Template">
-  <meta name="keywords"
-    content="book author, book publisher, book shop, book store, bootstrap 5, digital books, ecommerce website, library">
 
-  <!-- Plugin CSS -->
-  <link href="assets/css/plugins/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/plugins/slick.css" rel="stylesheet">
-  <link href="assets/css/plugins/ion.rangeSlider.min.css" rel="stylesheet">
-  <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet">
-  <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/fonts/flaticon/flaticon.css" rel="stylesheet">
-
-  <!-- favicon -->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-  <!-- Main CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body class="btn-style-4 btn-square sidebar-style-4">
   <!--header Start-->
-  <div id="section-header">
-    <aside class="sigma_aside">
-      <div class="sigma_close aside-trigger">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="sigma_logo-wrapper">
-        <a class="sigma_logo" href="index.html">
-          <img src="assets/img/logo.png" alt="logo">
-        </a>
-      </div>
-      <ul class="navbar-nav">
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Home</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="index.html">Home 1</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="about-us.html">About</a>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Pages</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="contact-us.html">Contact us</a>
-            </li>
-            <li class="menu-item">
-              <a href="login.html">Login</a>
-            </li>
-            <li class="menu-item">
-              <a href="signup.html">Signup</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Shop</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="shop.html">Shop</a>
-            </li>
-            <li class="menu-item">
-              <a href="product-details.html">Product details</a>
-            </li>
-            <li class="menu-item">
-              <a href="checkout.html">Checkout</a>
-            </li>
-            <li class="menu-item">
-              <a href="wishlist.html">Wishlist</a>
-            </li>
-            <li class="menu-item">
-              <a href="cart.html">Cart</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="blog.html">Blog</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="menu-item">
-              <a href="blog-details.html">Blog details</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="contact-us.html">Contact us</a>
-        </li>
-      </ul>
-    </aside>
-    <div class="sigma_aside-overlay aside-trigger">
-    </div>
-    <header class="sigma_header style-1 can-sticky">
-      <div class="sigma_header-middle">
-        <div class="container">
-          <div class="navbar">
-            <div class="sigma_logo-wrapper">
-              <a class="sigma_logo" href="index.html">
-                <img src="assets/img/logo.png" alt="logo">
-              </a>
-            </div>
-            <ul class="navbar-nav">
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Home</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="index.html">Home 1</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="about-us.html">About</a>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="contact-us.html">Contact us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="login.html">Login</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="signup.html">Signup</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Shop</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="shop.html">Shop</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="product-details.html">Product details</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="checkout.html">Checkout</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="wishlist.html">Wishlist</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="cart.html">Cart</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="blog.html">Blog</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="blog-details.html">Blog details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="contact-us.html">Contact us</a>
-              </li>
-            </ul>
-            <div class="sigma_header-controls style-1">
-              <ul class="sigma_header-controls-inner">
-                <li class="search-trigger header-controls-item d-none d-sm-block">
-                  <a class="sigma_header-control-search" title="Search" href="#">
-                    <i class="far fa-search"></i>
-                  </a>
-                </li>
-                <li class="cart-trigger header-controls-item d-none d-sm-block">
-                  <a class="sigma_header-control-cart" title="Your Cart" href="cart.html">
-                    <i class="far fa-shopping-basket"></i>
-                    <div class="sigma_header-control-cart-inner">
-                      <span>3 Items</span>
-                      <p>129.99$</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="aside-toggle aside-trigger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="search-form-wrapper">
-      <div class="search-trigger sigma_close">
-        <span></span>
-        <span></span>
-      </div>
-      <form class="search-form" method="post">
-        <input type="text" placeholder="Search..." value="">
-        <button type="submit" class="search-btn">
-          <i class="fal fa-search m-0"></i>
-        </button>
-      </form>
-    </div>
-    <!--header End-->
-  </div>
+
   <!--subheader Start-->
   <div id="section-subheader">
     <div class="sigma_subheader style-11 bg-cover bg-center dark-overlay"
-      style="background-image: url(assets/img/login/1920x800-0.jpg)">
+      style="background-image: url(/static/web/img/login/1920x800-0.jpg)">
       <div class="container d-block d-lg-flex align-items-center justify-content-between">
         <div class="sigma_subheader-inner">
           <h1 class="mb-4 mb-lg-0">Login</h1>
@@ -242,12 +43,13 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="w-100 h-100 mb-lg-30">
-              <img src="assets/img/login/540x429.jpg" class="w-100 h-100 object-cover" alt="img">
+              <img src="/static/web/img/login/540x429.jpg" class="w-100 h-100 object-cover" alt="img">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="sigma_form has-shadow">
               <form method="post">
+                {% csrf_token %}
                 <div class="form-group">
                   <i class="fal fa-envelope"></i>
                   <input type="email" name="email" placeholder="Email">
@@ -264,7 +66,7 @@
                   <a href="#">Forgot password?</a>
                 </div>
                 <div class="form-group">
-                  <button type="button" class="btn-block">Login</button>
+                  <button type="submit" class="btn-block">Login</button>
                   <button type="button" class="btn-block google">
                     <i class="fab fa-google-plus-g ml-0 mr-2"></i>
                     Continue With Google
@@ -281,6 +83,10 @@
     </div>
     <!--login End-->
   </div>
+
+
+
+
   <!--to-top Start-->
   <div id="section-to-top">
     <div class="sigma_top style-3">
@@ -290,72 +96,14 @@
   </div>
   <!--footer Start-->
   <div id="section-footer">
-    <footer class="sigma_footer style-2 sigma_footer-dark pb-0">
-      <div class="container">
-        <div class="sigma_footer-top">
-          <div class="sigma_footer-logo">
-            <img src="assets/img/logo-white.png" alt="logo">
-          </div>
-          <div class="footer-item">
-            <ul class="sigma_footer-links">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about-us.html">About</a>
-              </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
-              <li>
-                <a href="contact-us.html">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-item">
-            <ul class="sigma_social-icons">
-              <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="sigma_footer-bottom">
-          <div class="payment-cards mb-3">
-            <img src="assets/img/payment-cards.png" alt="img">
-          </div>
-          <div class="sigma_footer-copyright">
-            <p class="mb-0">&copy;2023 Booksly -
-              All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+
     <!--footer End-->
   </div>
 
   <!-- Javascript -->
-  <script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/plugins/popper.min.js"></script>
-  <script src="assets/js/plugins/bootstrap.min.js"></script>
-  <script src="assets/js/plugins/slick.min.js"></script>
-  <script src="assets/js/plugins/imagesloaded.min.js"></script>
-  <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-  <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/plugins/jquery.counterup.min.js"></script>
-  <script src="assets/js/plugins/jquery.inview.min.js"></script>
-  <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
-  <script src="assets/js/plugins/jquery.validate.min.js"></script>
-  <script src="assets/js/main.js"></script>
 
 </body>
 
 
 </html>
+{% endblock %}

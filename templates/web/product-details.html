@@ -1,220 +1,20 @@
+{% extends 'web/base.html' %} {% load static %} {% block content %}
+
+
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Product Details - Booksly - Book Store HTML5 Template</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Booksly - Book Store HTML5 Template">
-  <meta name="keywords"
-    content="book author, book publisher, book shop, book store, bootstrap 5, digital books, ecommerce website, library">
-
-  <!-- Plugin CSS -->
-  <link href="assets/css/plugins/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/plugins/slick.css" rel="stylesheet">
-  <link href="assets/css/plugins/ion.rangeSlider.min.css" rel="stylesheet">
-  <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet">
-  <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/fonts/flaticon/flaticon.css" rel="stylesheet">
-
-  <!-- favicon -->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-  <!-- Main CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body class="btn-style-4 btn-square sidebar-style-4">
   <!--header Start-->
-  <div id="section-header">
-    <aside class="sigma_aside">
-      <div class="sigma_close aside-trigger">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="sigma_logo-wrapper">
-        <a class="sigma_logo" href="index.html">
-          <img src="assets/img/logo.png" alt="logo">
-        </a>
-      </div>
-      <ul class="navbar-nav">
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Home</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="index.html">Home 1</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="about-us.html">About</a>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Pages</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="contact-us.html">Contact us</a>
-            </li>
-            <li class="menu-item">
-              <a href="login.html">Login</a>
-            </li>
-            <li class="menu-item">
-              <a href="signup.html">Signup</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Shop</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="shop.html">Shop</a>
-            </li>
-            <li class="menu-item">
-              <a href="product-details.html">Product details</a>
-            </li>
-            <li class="menu-item">
-              <a href="checkout.html">Checkout</a>
-            </li>
-            <li class="menu-item">
-              <a href="wishlist.html">Wishlist</a>
-            </li>
-            <li class="menu-item">
-              <a href="cart.html">Cart</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="blog.html">Blog</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="menu-item">
-              <a href="blog-details.html">Blog details</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a href="contact-us.html">Contact us</a>
-        </li>
-      </ul>
-    </aside>
-    <div class="sigma_aside-overlay aside-trigger">
-    </div>
-    <header class="sigma_header style-1 can-sticky">
-      <div class="sigma_header-middle">
-        <div class="container">
-          <div class="navbar">
-            <div class="sigma_logo-wrapper">
-              <a class="sigma_logo" href="index.html">
-                <img src="assets/img/logo.png" alt="logo">
-              </a>
-            </div>
-            <ul class="navbar-nav">
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Home</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="index.html">Home 1</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="about-us.html">About</a>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="contact-us.html">Contact us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="login.html">Login</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="signup.html">Signup</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Shop</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="shop.html">Shop</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="product-details.html">Product details</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="checkout.html">Checkout</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="wishlist.html">Wishlist</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="cart.html">Cart</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="blog.html">Blog</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="blog-details.html">Blog details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="contact-us.html">Contact us</a>
-              </li>
-            </ul>
-            <div class="sigma_header-controls style-1">
-              <ul class="sigma_header-controls-inner">
-                <li class="search-trigger header-controls-item d-none d-sm-block">
-                  <a class="sigma_header-control-search" title="Search" href="#">
-                    <i class="far fa-search"></i>
-                  </a>
-                </li>
-                <li class="cart-trigger header-controls-item d-none d-sm-block">
-                  <a class="sigma_header-control-cart" title="Your Cart" href="cart.html">
-                    <i class="far fa-shopping-basket"></i>
-                    <div class="sigma_header-control-cart-inner">
-                      <span>3 Items</span>
-                      <p>129.99$</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="aside-toggle aside-trigger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="search-form-wrapper">
-      <div class="search-trigger sigma_close">
-        <span></span>
-        <span></span>
-      </div>
-      <form class="search-form" method="post">
-        <input type="text" placeholder="Search..." value="">
-        <button type="submit" class="search-btn">
-          <i class="fal fa-search m-0"></i>
-        </button>
-      </form>
-    </div>
-    <!--header End-->
-  </div>
+
   <!--subheader Start-->
   <div id="section-subheader">
     <div class="sigma_subheader style-11 bg-cover bg-center dark-overlay"
-      style="background-image: url(assets/img/product-details/1920x800-0.jpg)">
+      style="background-image: url(/static/web/img/product-details/1920x800-0.jpg)">
       <div class="container d-block d-lg-flex align-items-center justify-content-between">
         <div class="sigma_subheader-inner">
           <h1 class="mb-4 mb-lg-0">Product Details</h1>
@@ -238,16 +38,16 @@
           <div class="col-lg-5 col-md-6">
             <div class="sigma_product-single-thumb mb-lg-30">
               <div class="slider">
-                <img src="assets/img/product-details/440x540-3.jpg" alt="product">
-                <img src="assets/img/product-details/440x540-4.jpg" alt="product">
-                <img src="assets/img/product-details/440x540-5.jpg" alt="product">
-                <img src="assets/img/product-details/440x540-6.jpg" alt="product">
+                <img src="/static/web/img/product-details/440x540-3.jpg" alt="product">
+                <img src="/static/web/img/product-details/440x540-4.jpg" alt="product">
+                <img src="/static/web/img/product-details/440x540-5.jpg" alt="product">
+                <img src="/static/web/img/product-details/440x540-6.jpg" alt="product">
               </div>
               <div class="slider-nav">
-                <img src="assets/img/product-details/250-3.jpg" alt="product">
-                <img src="assets/img/product-details/250-4.jpg" alt="product">
-                <img src="assets/img/product-details/250-5.jpg" alt="product">
-                <img src="assets/img/product-details/250-6.jpg" alt="product">
+                <img src="/static/web/img/product-details/250-3.jpg" alt="product">
+                <img src="/static/web/img/product-details/250-4.jpg" alt="product">
+                <img src="/static/web/img/product-details/250-5.jpg" alt="product">
+                <img src="/static/web/img/product-details/250-6.jpg" alt="product">
               </div>
             </div>
           </div>
@@ -283,21 +83,61 @@
               </div>
               <hr>
               <form class="sigma_product-atc-form">
+              </form>
                 <div class="sigma_product-buttons">
                   <a href="product-details.html" class="ml-0 sigma_btn">Buy Now <i class="far fa-shopping-basket"></i>
                   </a>
-                  <a href="product-details.html" data-toggle="tooltip" title="Wishlist" class="ml-2 sigma_btn light"> <i
-                      class="m-0 far fa-heart"></i>
+                  <a href="/static/web/pdf/udambadikaraarmangkishg.pdf" download data-toggle="tooltip"
+                    title="Download Now" class="ml-2 sigma_btn light">
+                    <i class="m-0 far fa-download"></i>
                   </a>
-                  <a href="product-details.html" data-toggle="tooltip" title="Compare" class="ml-2 sigma_btn light"> <i
-                      class="m-0 far fa-compress"></i>
+                  <a href="/static/web/pdf/udambadikaraarmangkishg.pdf" data-toggle="tooltip" title="Read now"
+                    class="ml-2 sigma_btn light">
+                    <i class="m-0 far fa-book"></i>
                   </a>
+                  <div data-toggle="modal" data-toggle="tooltip" data-target="#myModal" title="Read now"
+                    class="ml-2 sigma_btn light">
+                    <i data-toggle="modal" data-target="#myModal" class="m-0 far fa-book"></i>
+                  </div>
+                  <!-- <button class="open-overlay-button">Open Overlay</button> -->
                 </div>
-              </form>
+              
+              
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>                
+             
+
+
+
+              <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script> -->
+
+              <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+    
+                            <embed src="/static/web/pdf/udambadikaraarmangkishg.pdf"
+                                   frameborder="0" width="100%" height="400px">
+    
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+
               <!-- Post Meta Start -->
               <div class="sigma_post-single-meta">
                 <div class="sigma_post-single-meta-item sigma_post-share">
-                  <h5>Share</h5>
                   <ul class="sigma_sm">
                     <li>
                       <a href="#">
@@ -335,7 +175,7 @@
         <div class="sigma_product-additional-info">
           <ul class="nav" id="bordered-tab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="tab-product-desc-tab" data-toggle="pill" href="#tab-product-desc"
+              <a class="nav-link" id="tab-product-desc-tab" data-toggle="pill" href="#tab-product-desc"
                 role="tab" aria-controls="tab-product-desc" aria-selected="true">Description</a>
             </li>
             <li class="nav-item">
@@ -343,7 +183,7 @@
                 aria-controls="tab-product-info" aria-selected="false">Additional Information</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="tab-product-reviews-tab" data-toggle="pill" href="#tab-product-reviews" role="tab"
+              <a class="nav-link active" id="tab-product-reviews-tab" data-toggle="pill" href="#tab-product-reviews" role="tab"
                 aria-controls="tab-product-reviews" aria-selected="false">Reviews </a>
             </li>
           </ul>
@@ -417,7 +257,7 @@
               <div class="comments-list">
                 <ul>
                   <li class="comment-item">
-                    <img src="assets/img/product-details/150-1.jpg" alt="comment author">
+                    <img src="/static/web/img/product-details/150-1.jpg" alt="comment author">
                     <div class="comment-body">
                       <h5>Robert John</h5>
                       <div class="sigma_rating">
@@ -435,7 +275,7 @@
                     </div>
                   </li>
                   <li class="comment-item">
-                    <img src="assets/img/product-details/150-2.jpg" alt="comment author">
+                    <img src="/static/web/img/product-details/150-2.jpg" alt="comment author">
                     <div class="comment-body">
                       <h5>Christine Hill</h5>
                       <div class="sigma_rating">
@@ -475,7 +315,7 @@
             <div class="row sigma_product-single">
               <div class="col-md-6">
                 <div class="sigma_product-single-thumb">
-                  <img src="assets/img/product-details/600-0.jpg" alt="product">
+                  <img src="/static/web/img/product-details/600-0.jpg" alt="product">
                 </div>
               </div>
               <div class="col-md-6">
@@ -564,73 +404,12 @@
     <!--to-top End-->
   </div>
   <!--footer Start-->
-  <div id="section-footer">
-    <footer class="sigma_footer style-2 sigma_footer-dark pb-0">
-      <div class="container">
-        <div class="sigma_footer-top">
-          <div class="sigma_footer-logo">
-            <img src="assets/img/logo-white.png" alt="logo">
-          </div>
-          <div class="footer-item">
-            <ul class="sigma_footer-links">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about-us.html">About</a>
-              </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
-              <li>
-                <a href="contact-us.html">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-item">
-            <ul class="sigma_social-icons">
-              <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="sigma_footer-bottom">
-          <div class="payment-cards mb-3">
-            <img src="assets/img/payment-cards.png" alt="img">
-          </div>
-          <div class="sigma_footer-copyright">
-            <p class="mb-0">&copy;2023 Booksly -
-              All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--footer End-->
-  </div>
 
-  <!-- Javascript -->
-  <script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/plugins/popper.min.js"></script>
-  <script src="assets/js/plugins/bootstrap.min.js"></script>
-  <script src="assets/js/plugins/slick.min.js"></script>
-  <script src="assets/js/plugins/imagesloaded.min.js"></script>
-  <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-  <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/plugins/jquery.counterup.min.js"></script>
-  <script src="assets/js/plugins/jquery.inview.min.js"></script>
-  <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
-  <script src="assets/js/plugins/jquery.validate.min.js"></script>
-  <script src="assets/js/main.js"></script>
+
+
 
 </body>
 
 
 </html>
+{% endblock %}

@@ -64,19 +64,19 @@
                     <div>
                       <div class="sigma_product style-2">
                         <div class="sigma_product-thumb">
-                          <a href="product-details.html">
+                          <a href="{% url 'web:single_page' %}">
                             <img src="/static/web/img/shop/500-5.jpg" alt="product">
                           </a>
                           <div class="sigma_product-controls">
                             <a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="product-details.html" data-toggle="tooltip" title="Add To Cart"><i
+                            <a href="{% url 'web:single_page' %}" data-toggle="tooltip" title="Add To Cart"><i
                                 class="far fa-shopping-basket"></i></a>
                             <a href="#" data-toggle="tooltip" title="Quick View"><i data-toggle="modal"
                                 data-target="#quickViewModal" class="far fa-eye"></i></a>
                           </div>
                         </div>
                         <div class="sigma_product-body">
-                          <h5 class="sigma_product-title"><a href="product-details.html">lamiiz</a></h5>
+                          <h5 class="sigma_product-title"><a href="{% url 'web:single_page' %}">lamiiz</a></h5>
                           <div class="lang_author">
                             <p>arabic</p>
                             <p>narayanan</p>
@@ -90,24 +90,28 @@
                   </td>
                 </tr>
 
+                <!-- More product rows here -->
+
+
+
                 <tr class="col-md-4 col-sm-6">
                   <td data-price="29">
                     <div>
                       <div class="sigma_product style-2">
                         <div class="sigma_product-thumb">
-                          <a href="product-details.html">
+                          <a href="{% url 'web:single_page' %}">
                             <img src="/static/web/img/shop/500-5.jpg" alt="product">
                           </a>
                           <div class="sigma_product-controls">
                             <a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="product-details.html" data-toggle="tooltip" title="Add To Cart"><i
+                            <a href="{% url 'web:single_page' %}" data-toggle="tooltip" title="Add To Cart"><i
                                 class="far fa-shopping-basket"></i></a>
                             <a href="#" data-toggle="tooltip" title="Quick View"><i data-toggle="modal"
                                 data-target="#quickViewModal" class="far fa-eye"></i></a>
                           </div>
                         </div>
                         <div class="sigma_product-body">
-                          <h5 class="sigma_product-title"><a href="product-details.html">Zero To One</a></h5>
+                          <h5 class="sigma_product-title"><a href="{% url 'web:single_page' %}">Zero To One</a></h5>
                           <div class="lang_author">
                             <p>english</p>
                             <p>sre.narayanan</p>
@@ -126,19 +130,19 @@
                     <div>
                       <div class="sigma_product style-2">
                         <div class="sigma_product-thumb">
-                          <a href="product-details.html">
+                          <a href="{% url 'web:single_page' %}">
                             <img src="/static/web/img/shop/500-5.jpg" alt="product">
                           </a>
                           <div class="sigma_product-controls">
                             <a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="product-details.html" data-toggle="tooltip" title="Add To Cart"><i
+                            <a href="{% url 'web:single_page' %}" data-toggle="tooltip" title="Add To Cart"><i
                                 class="far fa-shopping-basket"></i></a>
                             <a href="#" data-toggle="tooltip" title="Quick View"><i data-toggle="modal"
                                 data-target="#quickViewModal" class="far fa-eye"></i></a>
                           </div>
                         </div>
                         <div class="sigma_product-body">
-                          <h5 class="sigma_product-title"><a href="product-details.html">Zero To One</a></h5>
+                          <h5 class="sigma_product-title"><a href="{% url 'web:single_page' %}">Zero To One</a></h5>
                           <div class="lang_author">
                             <p>english</p>
                             <p>sre.narayanan</p>
@@ -155,105 +159,9 @@
             </table>
 
           </section>
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script>
-
-            // $(document).ready(function () {
-            //   // Event listener for range slider change
-            //   $('[name="freshness_range"]').on('change', function () {
-            //     var minPrice = parseInt($(this).val().split(',')[0]);
-            //     var maxPrice = parseInt($(this).val().split(',')[1]);
-
-            //     // Loop through each product in the table and hide/show based on the price range
-            //     $('.tbody_classname tr').each(function () {
-            //       var productPrice = parseInt($(this).find('td').data('price'));
-
-            //       if (productPrice >= minPrice && productPrice <= maxPrice) {
-            //         $(this).show();
-            //       } else {
-            //         $(this).hide();
-            //       }
-            //     });
-            //   });
-            // });
 
 
 
-            $(document).ready(function () {
-              $('[name="freshness_range"]').on('change', function () {
-                var minPrice = parseInt($(this).val('input').data('data-min'));
-                var maxPrice = parseInt($(this).val('input').data('data-max'));
-
-                $('.tbody_classname tr').each(function () {
-                  var productPrice = parseInt($(this).find('td').data('price'));
-
-                  if (productPrice >= minPrice && productPrice <= maxPrice) {
-                    $(this).show();
-                  } else {
-                    $(this).hide();
-                  }
-                });
-              });
-            });
-
-          </script>
-
-          <style>
-            .container_prodexct td,
-            th,
-            table,
-            tbody {
-              border: none !important;
-            }
-
-            .container_prodexct {
-              overflow: hidden;
-
-              margin: 0 auto;
-            }
-
-            .container_prodexct table {
-              width: 100%;
-            }
-
-            .container_prodexct td,
-            .container_prodexct th {
-              padding: 0px;
-            }
-
-            .container_prodexct td:first-child,
-            .container_prodexct th:first-child {
-              padding-left: 0px;
-            }
-
-            .container_prodexct td:last-child,
-            .container_prodexct th:last-child {
-              padding-right: 0px;
-            }
-
-            .container_prodexctzz th {
-              border-bottom: 1px solid #ddd;
-              position: relative;
-            }
-
-            .sidebar {
-              margin-top: 45px;
-            }
-
-            .select-table-filter {
-              width: 220px;
-            }
-
-            .select-table-filter option {
-              padding: 20px 0 20px 0;
-            }
-
-            .lang_author {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-            }
-          </style>
           <!-- Sidebar Start -->
           <div class="col-lg-4">
             <div class="sidebar">
@@ -273,10 +181,207 @@
               <!-- Filter: Price Start -->
               <div class="widget">
                 <h5 class="widget-title">Price</h5>
-                <input type="range" class="js-range-slider" name="freshness_range" value="" data-type="double"
-                  data-min="0" data-max="500" data-from="0" data-to="500" data-grid="true" data-postfix="$">
+                <div class="wrapper">
+                  <div class="price-input">
+                    <div class="field">
+                      <span>Min</span>
+                      <input type="number" id="minInput" class="input-min" value="0">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                      <span>Max</span>
+                      <input type="number" id="maxInput" class="input-max" value="100">
+                    </div>
+                  </div>
+                  <div class="slider">
+                    
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="500" value="25" step="100">
+                    <input type="range" class="range-max" min="0" max="500" value="75" step="100">
+                </div>
+                </div>
               </div>
               <!-- Filter: Price End -->
+
+              <!-- Filter: Price End -->
+              <style>
+                /* Import Google Font - Poppins */
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+                ::selection {
+                  color: #fff;
+                  background: #17a2b8;
+                }
+
+                .wrapper {
+                  width: 400px;
+                }
+
+                header h2 {
+                  font-size: 24px;
+                  font-weight: 600;
+                }
+
+                header p {
+                  margin-top: 5px;
+                  font-size: 16px;
+                }
+
+                .price-input {
+                  width: 100%;
+                  display: flex;
+                  margin: 30px 0 35px;
+                }
+
+                .price-input .field {
+                  display: flex;
+                  width: 100%;
+                  height: 45px;
+                  align-items: center;
+                }
+
+                .field input {
+                  width: 100%;
+                  height: 100%;
+                  outline: none;
+                  font-size: 19px;
+                  margin-left: 12px;
+                  border-radius: 5px;
+                  text-align: center;
+                  border: 1px solid #999;
+                  -moz-appearance: textfield;
+                }
+
+                input[type="number"]::-webkit-outer-spin-button,
+                input[type="number"]::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                }
+
+                .price-input .separator {
+                  width: 130px;
+                  display: flex;
+                  font-size: 19px;
+                  align-items: center;
+                  justify-content: center;
+                }
+
+                .slider {
+                  height: 5px;
+                  position: relative;
+                  background: #ddd;
+                  border-radius: 5px;
+                }
+
+                .slider .progress {
+                  height: 100%;
+                  left: 25%;
+                  right: 25%;
+                  position: absolute;
+                  border-radius: 5px;
+                  background: #17a2b8;
+                }
+
+                .range-input {
+                  position: relative;
+                }
+
+                .range-input input {
+                  position: absolute;
+                  width: 100%;
+                  height: 5px;
+                  top: -5px;
+                  background: none;
+                  pointer-events: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                }
+
+                input[type="range"]::-webkit-slider-thumb {
+                  height: 17px;
+                  width: 17px;
+                  border-radius: 50%;
+                  background: #17a2b8;
+                  pointer-events: auto;
+                  -webkit-appearance: none;
+                  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+                }
+
+                input[type="range"]::-moz-range-thumb {
+                  height: 17px;
+                  width: 17px;
+                  border: none;
+                  border-radius: 50%;
+                  background: #17a2b8;
+                  pointer-events: auto;
+                  -moz-appearance: none;
+                  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+                }
+
+                /* Support */
+                .support-box {
+                  top: 2rem;
+                  position: relative;
+                  bottom: 0;
+                  text-align: center;
+                  display: block;
+                }
+
+                .b-btn {
+                  color: white;
+                  text-decoration: none;
+                  font-weight: bold;
+                }
+
+                .b-btn.paypal i {
+                  color: blue;
+                }
+
+                .b-btn:hover {
+                  text-decoration: none;
+                  font-weight: bold;
+                }
+
+                .b-btn i {
+                  font-size: 20px;
+                  color: yellow;
+                  margin-top: 2rem;
+                }
+              </style>
+
+              <script>
+                const productRows = document.querySelectorAll('.tbody_classname.row tr');
+        const minInput = document.getElementById('minInput');
+        const maxInput = document.getElementById('maxInput');
+        const rangeMinInput = document.querySelector('.range-min');
+        const rangeMaxInput = document.querySelector('.range-max');
+
+        // Add event listeners to the filter inputs
+        minInput.addEventListener('input', filterProducts);
+        maxInput.addEventListener('input', filterProducts);
+        rangeMinInput.addEventListener('input', updateRangeValues);
+        rangeMaxInput.addEventListener('input', updateRangeValues);
+
+        function filterProducts() {
+            const minPrice = parseInt(minInput.value);
+            const maxPrice = parseInt(maxInput.value);
+
+            productRows.forEach(row => {
+                const price = parseInt(row.querySelector('td').dataset.price);
+                if (price >= minPrice && price <= maxPrice) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function updateRangeValues() {
+            minInput.value = rangeMinInput.value;
+            maxInput.value = rangeMaxInput.value;
+            filterProducts();
+        }
+              </script>
               <!-- Category Widget -->
               <div class="widget widget-categories">
                 <h5 class="widget-title">Categories</h5>
@@ -313,7 +418,62 @@
                   </li>
                 </ul>
               </div>
+              <style>
+                .container_prodexct td,
+                th,
+                table,
+                tbody {
+                  border: none !important;
+                }
 
+                .container_prodexct {
+                  overflow: hidden;
+
+                  margin: 0 auto;
+                }
+
+                .container_prodexct table {
+                  width: 100%;
+                }
+
+                .container_prodexct td,
+                .container_prodexct th {
+                  padding: 0px;
+                }
+
+                .container_prodexct td:first-child,
+                .container_prodexct th:first-child {
+                  padding-left: 0px;
+                }
+
+                .container_prodexct td:last-child,
+                .container_prodexct th:last-child {
+                  padding-right: 0px;
+                }
+
+                .container_prodexctzz th {
+                  border-bottom: 1px solid #ddd;
+                  position: relative;
+                }
+
+                .sidebar {
+                  margin-top: 45px;
+                }
+
+                .select-table-filter {
+                  width: 220px;
+                }
+
+                .select-table-filter option {
+                  padding: 20px 0 20px 0;
+                }
+
+                .lang_author {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                }
+              </style>
               <!-- Recent Posts Widget -->
               <div class="widget widget-sigma-recent-posts">
                 <h5 class="widget-title">Most Commented</h5>
@@ -421,11 +581,11 @@
                   <hr>
                   <form class="sigma_product-atc-form">
                     <div class="sigma_product-buttons d-block">
-                      <a href="product-details.html" class="ml-0 btn-block sigma_btn">Buy Now <i
+                      <a href="{% url 'web:single_page' %}" class="ml-0 btn-block sigma_btn">Buy Now <i
                           class="far fa-shopping-basket"></i> </a>
-                      <a href="product-details.html" class="ml-0 btn-block sigma_btn light">Wishlist <i
+                      <a href="{% url 'web:single_page' %}" class="ml-0 btn-block sigma_btn light">Wishlist <i
                           class="far fa-heart"></i> </a>
-                      <a href="product-details.html" class="ml-0 btn-block sigma_btn light">Compare <i
+                      <a href="{% url 'web:single_page' %}" class="ml-0 btn-block sigma_btn light">Compare <i
                           class="far fa-compress"></i> </a>
                     </div>
                   </form>
